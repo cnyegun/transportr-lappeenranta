@@ -204,7 +204,7 @@ class DirectionsViewModel @Inject internal constructor(
 
     init {
         var network = transportNetwork.value
-        if (network == null) network = getTransportNetwork(NetworkId.DB)
+        if (network == null) network = getTransportNetwork(NetworkId.SE)
         requireNotNull(network)
         _tripsRepository = TripsRepository(
             application.applicationContext, network.networkProvider,
