@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="64dp"
+    android:viewportWidth="64"
+    android:viewportHeight="64">
+    
+    <!-- White background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M0,0h64v64h-64z"/>
+    
+    <!-- Blue vertical stripe -->
+    <path
+        android:fillColor="#003580"
+        android:pathData="M20,0h10v64h-10z"/>
+    
+    <!-- Blue horizontal stripe -->
+    <path
+        android:fillColor="#003580"
+        android:pathData="M0,27h64v10h-64z"/>
+    
+    <!-- Bus icon in the center -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,32m-8,0a8,8 0,1 1,16 0a8,8 0,1 1,-16 0"/>
+    
+    <path
+        android:fillColor="#003580"
+        android:pathData="M28,28h8v2h-8zM28,31h8v5h-3v-2h-2v2h-3zM29,37h1.5v1.5h-1.5zM33.5,37h1.5v1.5h-1.5z"/>
+</vector>

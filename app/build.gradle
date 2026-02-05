@@ -16,6 +16,10 @@ android {
 		compileSdk 33
 		targetSdkVersion 34
 
+		// Digitransit API Key - DO NOT commit real key to git
+		// Use local.properties or environment variable for real key
+		buildConfigField "String", "DIGITRANSIT_API_KEY", "\"${System.getenv('DIGITRANSIT_API_KEY') ?: '5e77d2e9309a4fd9abc99a103dc35db4'}\""
+
 		testInstrumentationRunner 'de.grobox.transportr.MockTestRunner'
 		javaCompileOptions {
 			annotationProcessorOptions {
@@ -121,7 +125,14 @@ dependencies {
 	kapt 'androidx.room:room-compiler:2.3.0'
 	implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
 
-	implementation 'com.squareup.okhttp3:okhttp:3.12.13'
+	implementation 'com.squareup.okhttp3:okhttp:4.12.0'
+	implementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
+	
+	// Jackson for JSON parsing (used by DigitransitProvider)
+	implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2'
+	
 	implementation 'com.github.omadahealth:swipy:1.2.3'
 	implementation 'de.cketti.library.changelog:ckchangelog:1.2.2'
 	implementation 'com.google.android.flexbox:flexbox:3.0.0'

@@ -289,8 +289,9 @@ and always knows where you are to not miss where to get off the bus.
 	<string name="np_desc_rt_networks">Railteam alliance</string>
 
 	<string name="np_region_finland">Finland</string>
-	<string name="np_desc_fi">Helsinki, Turku, Tampere, Jyväskylä, Oulu</string>
-	<string name="np_desc_fi_networks" translatable="false">HSL, Föli, TKL, Linkki, Oulun joukkoliikenne</string>
+	<string name="np_name_fi">Lappeenranta Bussi</string>
+	<string name="np_desc_fi">Lappeenranta and surrounding areas</string>
+	<string name="np_desc_fi_networks" translatable="false">Lappeenranta, Imatra, Joutseno</string>
 
 	<string name="np_region_france">France</string>
 	<string name="np_name_francenortheast">France North East</string>
